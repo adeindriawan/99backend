@@ -12,9 +12,9 @@ tornado.options.define("debug", default=True, help="run in debug mode", type=boo
 
 
 class App(tornado.web.Application):
-    def __init__(self, handlers, **kwargs):
+    def __init__(self, handlers, db_name="users.db", **kwargs):
         super().__init__(handlers, **kwargs)
-        self.db = sqlite3.connect("users.db")
+        self.db = sqlite3.connect(db_name)
         self.db.row_factory = sqlite3.Row
         self.init_db()
 

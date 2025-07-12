@@ -1,4 +1,3 @@
-````markdown
 # Real Estate Microservices System
 
 This project is a technical assignment demonstrating a microservices architecture for a real estate platform. The system is composed of three independent Python web applications built with the Tornado framework.
@@ -162,6 +161,3 @@ curl "http://localhost:8000/public-api/listings"
 ```
 
 The response will be a JSON object containing a list of properties, with the full user object embedded within each one, as per the assignment requirements.
-
-```
-```
