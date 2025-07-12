@@ -1,0 +1,6 @@
+# Ignore virtualenv dir
+env/
+
+# Ignore SQLite db files
+*.db
+/.idea/
